@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loadstringer Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        input, textarea, button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 90%;
+            max-width: 500px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        textarea {
+            height: 40px;
+            text-align: center;
+            background-color: #f9f9f9;
+            color: #333;
+            resize: none;
+        }
+        .copy-btn {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+        }
+        .copy-btn:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            font-size: 14px;
+            color: #888;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Loadstringer Converter</h1>
+        <input type="text" id="rawLink" placeholder="Enter raw link" />
+        <button onclick="convertLink()">Convert</button>
+        <textarea id="loadstring" readonly></textarea>
+        <button class="copy-btn" onclick="copyLoadstring()">Copy Loadstring</button>
+    </div>
+    <footer>
+        <p>&#169; GStoreAge 2025 - <span id="currentYear"></span></p>
+    </footer>
+
+    <script>
+        function convertLink() {
+            const link = document.getElementById("rawLink").value;
+            if (link) {
+                document.getElementById("loadstring").value = `loadstring(game:HttpGet("${link}", true))()`;
+            } else {
+                document.getElementById("loadstring").value = "Please enter a link.";
+            }
+        }
+
+        function copyLoadstring() {
+            const loadstringText = document.getElementById("loadstring");
+            loadstringText.select();
+            document.execCommand("copy");
+        }
+
+        // Set the current year dynamically for the footer
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
