@@ -1,607 +1,395 @@
+
 -- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
+local abrakadabra = Instance.new("ScreenGui")
 local ImageLabel = Instance.new("ImageLabel")
-local ImageLabel_2 = Instance.new("ImageLabel")
-local VERSUIB = Instance.new("TextLabel")
-local skybox = Instance.new("TextButton")
-local skybox_2 = Instance.new("TextButton")
-local skybox_3 = Instance.new("TextButton")
-local skybox_4 = Instance.new("TextButton")
-local skybox_5 = Instance.new("TextButton")
-local skybox_6 = Instance.new("TextButton")
-local skybox_7 = Instance.new("TextButton")
-local fps_label = Instance.new("TextLabel")
-local skybox_8 = Instance.new("TextButton")
-local skybox_9 = Instance.new("TextButton")
+local KillAll = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Version = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local StopMusic = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Skybox = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Message = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local KickAll = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Jumpscare = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Hint = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local BypassedAudio = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
+local Name = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local audio = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local aLLPART = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local kingvonrain = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local expld = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local bobguy = Instance.new("TextLabel")
+local UICorner_16 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = false
+abrakadabra.Name = "abrakadabra"
+abrakadabra.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+abrakadabra.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+abrakadabra.ResetOnSpawn = false
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(107, 255, 255)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 5
-Frame.Position = UDim2.new(0.233923584, 0, 0.25, 0)
-Frame.Size = UDim2.new(0, 559, 0, 349)
-
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.103109762, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 433, 0, 46)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "ABRAKADABRA GUI"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
-ImageLabel.Parent = Frame
+ImageLabel.Parent = abrakadabra
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel.BorderSizePixel = 0
-ImageLabel.Size = UDim2.new(0, 121, 0, 46)
-ImageLabel.Image = "rbxassetid://486583145"
+ImageLabel.Position = UDim2.new(0.0260999259, 0, 0.125, 0)
+ImageLabel.Size = UDim2.new(0, 677, 0, 431)
+ImageLabel.Image = "rbxassetid://17575659951"
 
-ImageLabel_2.Parent = Frame
-ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_2.BorderSizePixel = 0
-ImageLabel_2.Position = UDim2.new(0.779197097, 0, 0, 0)
-ImageLabel_2.Size = UDim2.new(0, 123, 0, 46)
-ImageLabel_2.Image = "rbxassetid://486583145"
+KillAll.Name = "Kill All"
+KillAll.Parent = ImageLabel
+KillAll.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+KillAll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KillAll.BorderSizePixel = 0
+KillAll.Position = UDim2.new(0.270629108, 0, 0.301624119, 0)
+KillAll.Size = UDim2.new(0, 141, 0, 50)
+KillAll.Font = Enum.Font.SourceSans
+KillAll.Text = "Kill All"
+KillAll.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillAll.TextScaled = true
+KillAll.TextSize = 14.000
+KillAll.TextWrapped = true
 
-VERSUIB.Name = "VERSUIB"
-VERSUIB.Parent = Frame
-VERSUIB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VERSUIB.BackgroundTransparency = 1.000
-VERSUIB.BorderColor3 = Color3.fromRGB(27, 42, 53)
-VERSUIB.Position = UDim2.new(-3.75600976e-05, 0, 0.836465716, 0)
-VERSUIB.Size = UDim2.new(0.216495514, 0, 0.162677556, 0)
-VERSUIB.Font = Enum.Font.SourceSans
-VERSUIB.Text = "v1.0.0"
-VERSUIB.TextColor3 = Color3.fromRGB(255, 255, 255)
-VERSUIB.TextScaled = true
-VERSUIB.TextSize = 14.000
-VERSUIB.TextStrokeTransparency = 0.500
-VERSUIB.TextWrapped = true
-VERSUIB.TextXAlignment = Enum.TextXAlignment.Right
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = KillAll
 
-skybox.Name = "skybox"
-skybox.Parent = Frame
-skybox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-skybox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-skybox.Position = UDim2.new(0.529998481, 0, 0.159254536, 0)
-skybox.Size = UDim2.new(0, 200, 0, 31)
-skybox.Font = Enum.Font.SourceSans
-skybox.Text = "skybox"
-skybox.TextColor3 = Color3.fromRGB(0, 0, 0)
-skybox.TextSize = 14.000
+Version.Name = "Version"
+Version.Parent = ImageLabel
+Version.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Version.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Version.BorderSizePixel = 0
+Version.Position = UDim2.new(0.517516553, 0, 0.0207654778, 0)
+Version.Size = UDim2.new(0, 135, 0, 50)
+Version.Font = Enum.Font.SourceSans
+Version.Text = "v1.0.1 (lite)"
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextScaled = true
+Version.TextSize = 14.000
+Version.TextWrapped = true
 
-skybox_2.Name = "skybox"
-skybox_2.Parent = Frame
-skybox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-skybox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-skybox_2.Position = UDim2.new(0.133438572, 0, 0.159254536, 0)
-skybox_2.Size = UDim2.new(0, 200, 0, 31)
-skybox_2.Font = Enum.Font.SourceSans
-skybox_2.Text = "hint"
-skybox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-skybox_2.TextSize = 14.000
+UICorner_2.Parent = Version
 
-skybox_3.Name = "skybox"
-skybox_3.Parent = Frame
-skybox_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-skybox_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-skybox_3.Position = UDim2.new(0.133438572, 0, 0.530081034, 0)
-skybox_3.Size = UDim2.new(0, 200, 0, 31)
-skybox_3.Font = Enum.Font.SourceSans
-skybox_3.Text = "stop all music"
-skybox_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-skybox_3.TextSize = 14.000
+StopMusic.Name = "Stop Music"
+StopMusic.Parent = ImageLabel
+StopMusic.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+StopMusic.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StopMusic.BorderSizePixel = 0
+StopMusic.Position = UDim2.new(0.0254296623, 0, 0.301624119, 0)
+StopMusic.Size = UDim2.new(0, 141, 0, 50)
+StopMusic.Font = Enum.Font.SourceSans
+StopMusic.Text = "Stop Music"
+StopMusic.TextColor3 = Color3.fromRGB(255, 255, 255)
+StopMusic.TextScaled = true
+StopMusic.TextSize = 14.000
+StopMusic.TextWrapped = true
 
-skybox_4.Name = "skybox"
-skybox_4.Parent = Frame
-skybox_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-skybox_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-skybox_4.Position = UDim2.new(0.529998481, 0, 0.412045091, 0)
-skybox_4.Size = UDim2.new(0, 200, 0, 31)
-skybox_4.Font = Enum.Font.SourceSans
-skybox_4.Text = "spam particle idk"
-skybox_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-skybox_4.TextSize = 14.000
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = StopMusic
 
-skybox_5.Name = "skybox"
-skybox_5.Parent = Frame
-skybox_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-skybox_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-skybox_5.Position = UDim2.new(0.133438572, 0, 0.412045091, 0)
-skybox_5.Size = UDim2.new(0, 200, 0, 31)
-skybox_5.Font = Enum.Font.SourceSans
-skybox_5.Text = "ban all"
-skybox_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-skybox_5.TextSize = 14.000
+Skybox.Name = "Skybox"
+Skybox.Parent = ImageLabel
+Skybox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Skybox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Skybox.BorderSizePixel = 0
+Skybox.Position = UDim2.new(0.0259740259, 0, 0.15545243, 0)
+Skybox.Size = UDim2.new(0, 141, 0, 50)
+Skybox.Font = Enum.Font.SourceSans
+Skybox.Text = "SkyBox"
+Skybox.TextColor3 = Color3.fromRGB(255, 255, 255)
+Skybox.TextScaled = true
+Skybox.TextSize = 14.000
+Skybox.TextWrapped = true
 
-skybox_6.Name = "skybox"
-skybox_6.Parent = Frame
-skybox_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-skybox_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-skybox_6.Position = UDim2.new(0.529998481, 0, 0.284150392, 0)
-skybox_6.Size = UDim2.new(0, 200, 0, 31)
-skybox_6.Font = Enum.Font.SourceSans
-skybox_6.Text = "audio"
-skybox_6.TextColor3 = Color3.fromRGB(0, 0, 0)
-skybox_6.TextSize = 14.000
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = Skybox
 
-skybox_7.Name = "skybox"
-skybox_7.Parent = Frame
-skybox_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-skybox_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-skybox_7.Position = UDim2.new(0.133438572, 0, 0.284150392, 0)
-skybox_7.Size = UDim2.new(0, 200, 0, 31)
-skybox_7.Font = Enum.Font.SourceSans
-skybox_7.Text = "jumpscare"
-skybox_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-skybox_7.TextSize = 14.000
+Message.Name = "Message"
+Message.Parent = ImageLabel
+Message.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Message.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Message.BorderSizePixel = 0
+Message.Position = UDim2.new(0.761027873, 0, 0.301624119, 0)
+Message.Size = UDim2.new(0, 141, 0, 50)
+Message.Font = Enum.Font.SourceSans
+Message.Text = "Message"
+Message.TextColor3 = Color3.fromRGB(255, 255, 255)
+Message.TextScaled = true
+Message.TextSize = 14.000
+Message.TextWrapped = true
 
-fps_label.Name = "fps_label"
-fps_label.Parent = Frame
-fps_label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-fps_label.BackgroundTransparency = 1.000
-fps_label.BorderColor3 = Color3.fromRGB(27, 42, 53)
-fps_label.Position = UDim2.new(0.85684973, 0, 0.836465776, 0)
-fps_label.Size = UDim2.new(0.141583323, 0, 0.162677556, 0)
-fps_label.Font = Enum.Font.SourceSans
-fps_label.Text = "0 FPS"
-fps_label.TextColor3 = Color3.fromRGB(255, 255, 255)
-fps_label.TextScaled = true
-fps_label.TextSize = 14.000
-fps_label.TextStrokeTransparency = 0.500
-fps_label.TextWrapped = true
-fps_label.TextXAlignment = Enum.TextXAlignment.Right
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = Message
 
-skybox_8.Name = "skybox"
-skybox_8.Parent = Frame
-skybox_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-skybox_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-skybox_8.Position = UDim2.new(0.528787434, 0, 0.530081034, 0)
-skybox_8.Size = UDim2.new(0, 200, 0, 31)
-skybox_8.Font = Enum.Font.SourceSans
-skybox_8.Text = "fling fling"
-skybox_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-skybox_8.TextSize = 14.000
+KickAll.Name = "Kick All"
+KickAll.Parent = ImageLabel
+KickAll.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+KickAll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KickAll.BorderSizePixel = 0
+KickAll.Position = UDim2.new(0.762504995, 0, 0.15545243, 0)
+KickAll.Size = UDim2.new(0, 141, 0, 50)
+KickAll.Font = Enum.Font.SourceSans
+KickAll.Text = "Kick All"
+KickAll.TextColor3 = Color3.fromRGB(255, 255, 255)
+KickAll.TextScaled = true
+KickAll.TextSize = 14.000
+KickAll.TextWrapped = true
 
-skybox_9.Name = "skybox"
-skybox_9.Parent = Frame
-skybox_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-skybox_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
-skybox_9.Position = UDim2.new(0.133438572, 0, 0.644136786, 0)
-skybox_9.Size = UDim2.new(0, 200, 0, 31)
-skybox_9.Font = Enum.Font.SourceSans
-skybox_9.Text = "kill all"
-skybox_9.TextColor3 = Color3.fromRGB(0, 0, 0)
-skybox_9.TextSize = 14.000
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = KickAll
 
--- Module Scripts:
+Jumpscare.Name = "Jumpscare"
+Jumpscare.Parent = ImageLabel
+Jumpscare.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Jumpscare.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Jumpscare.BorderSizePixel = 0
+Jumpscare.Position = UDim2.new(0.519937336, 0, 0.15545243, 0)
+Jumpscare.Size = UDim2.new(0, 141, 0, 50)
+Jumpscare.Font = Enum.Font.SourceSans
+Jumpscare.Text = "Jumpscare"
+Jumpscare.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jumpscare.TextScaled = true
+Jumpscare.TextSize = 14.000
+Jumpscare.TextWrapped = true
 
-local fake_module_scripts = {}
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = Jumpscare
 
-do -- Frame.LocationModule
-	local script = Instance.new('ModuleScript', Frame)
-	script.Name = "LocationModule"
-	local function module_script()
-		
-		
-		
-		---- You can call the function in this module as GetPlayerRegion(player)
-		
-		
-		
-		
-		
-		
-		local module = {}
-		
-		module.LocationCodeData = {
-			US = "United States",
-			GB =	"United Kingdom",
-			CA =	"Canada",
-			AF =	"Afghanistan",
-			AX =	"Aland Islands",
-			AL =	"Albania",
-			DZ =	"Algeria",
-			AS =	"American Samoa",
-			AD =	"Andorra",
-			AO =	"Angola",
-			AI =	"Anguilla",
-			AQ =	"Antarctica",
-			AG =	"Antigua and Barbuda",
-			AR =	"Argentina",
-			AM =	"Armenia",
-			AW =	"Aruba",
-			AU =	"Australia",
-			AT =	"Austria",
-			AZ =	"Azerbaijan",
-			BS =	"Bahamas",
-			BH =	"Bahrain",
-			BD =	"Bangladesh",
-			BB =	"Barbados",
-			BY =	"Belarus",
-			BE =	"Belgium",
-			BZ =	"Belize",
-			BJ =	"Benin",
-			BM =	"Bermuda",
-			BT =	"Bhutan",
-			BO = 	"Bolivia",
-			BQ =	"Bonaire, Saint Eustatius and Saba",
-			BA =	"Bosnia and Herzegovina",
-			BW =    "Botswana",
-			BV =	"Bouvet Island",
-			BR =	"Brazil",
-			IO =	"British Indian Ocean Territory",
-			BN =	"Brunei Darussalam",
-			BG =	"Bulgaria",
-			BF =	"Burkina Faso",
-			BI =	"Burundi",
-			KH =	"Cambodia",
-			CM =	"Cameroon",
-			CV =	"Cape Verde",
-			KY =	"Cayman Islands",
-			CF =	"Central African Republic",
-			TD =	"Chad",
-			CL =	"Chile",
-			CN =	"China",
-			CX =	"Christmas Island",
-			CC =	"Cocos Islands",
-			CO =	"Colombia",
-			KM =	"Comoros",
-			CG =	"Congo",
-			CD =	"Congo (DRC)",
-			CK =    "Cook Islands",
-			CR =	"Costa Rica",
-			CI =	"Ivory Coast",
-			HR =	"Croatia",
-			CW =	"Curaçao",
-			CY =	"Cyprus",
-			CZ =	"Czech Republic",
-			DK =	"Denmark",
-			DJ =	"Djibouti",
-			DM =	"Dominica",
-			DO =	"Dominican Republic",
-			EC =	"Ecuador",
-			EG =	"Egypt",
-			SV =	"El Salvador",
-			GQ =	"Equatorial Guinea",
-			ER =	"Eritrea",
-			EE =	"Estonia",
-			ET =	"Ethiopia",
-			FK =	"Falkland Islands (Malvinas)",
-			FO =	"Faroe Islands",
-			FJ =	"Fiji",
-			FI =	"Finland",
-			FR =	"France",
-			GF =	"French Guiana",
-			PF =	"French Polynesia",
-			TF =	"French Southern Territories",
-			GA =	"Gabon",
-			GM =	"Gambia",
-			GE =	"Georgia",
-			DE =	"Germany",
-			GH =	"Ghana",
-			GI =	"Gibraltar",
-			GR =	"Greece",
-			GL =	"Greenland",
-			GD =	"Grenada",
-			GP =	"Guadeloupe",
-			GU =	"Guam",
-			GT =	"Guatemala",
-			GG =	"Guernsey",
-			GN =	"Guinea",
-			GW =	"Guinea-Bissau",
-			GY =	"Guyana",
-			HT =	"Haiti",
-			HM =	"Heard Island and the McDonald Islands",
-			VA =	"Holy See",
-			HN =	"Honduras",
-			HK =	"Hong Kong",
-			HU =	"Hungary",
-			IS =	"Iceland",
-			IN =	"India",
-			ID =	"Indonesia",
-			IQ =	"Iraq",
-			IE =	"Ireland",
-			IM =	"Isle of Man",
-			IL =	"Israel",
-			IT =	"Italy",
-			JM =	"Jamaica",
-			JP =	"Japan",
-			JE =	"Jersey",
-			JO =	"Jordan",
-			KZ =	"Kazakhstan",
-			KE =	"Kenya",
-			KI =	"Kiribati",
-			KR =	"Korea",
-			KW =	"Kuwait",
-			KG =	"Kyrgyzstan",
-			LA =	"Laos",
-			LV =	"Latvia",
-			LB =	"Lebanon",
-			LS =	"Lesotho",
-			LR =	"Liberia",
-			LY =	"Libya",
-			LI =	"Liechtenstein",
-			LT =	"Lithuania",
-			LU =	"Luxembourg",
-			MO =	"Macao",
-			MK =	"Macedonia",
-			MG =	"Madagascar",
-			MW =	"Malawi",
-			MY =	"Malaysia",
-			MV =	"Maldives",
-			ML =	"Mali",
-			MT =	"Malta",
-			MH =	"Marshall Islands",
-			MQ =	"Martinique",
-			MR =	"Mauritania",
-			MU =	"Mauritius",
-			YT =	"Mayotte",
-			MX =	"Mexico",
-			FM =	"Micronesia",
-			MD =	"Moldova",
-			MC =	"Monaco",
-			MN =	"Mongolia",
-			ME =	"Montenegro",
-			MS =	"Montserrat",
-			MA =	"Morocco",
-			MZ =	"Mozambique",
-			MM =	"Myanmar",
-			NA =	"Namibia",
-			NR =	"Nauru",
-			NP =	"Nepal",
-			NL =	"Netherlands",
-			AN =	"Netherlands Antilles",
-			NC =	"New Caledonia",
-			NZ =	"New Zealand",
-			NI =	"Nicaragua",
-			NE =	"Niger",
-			NG =	"Nigeria",
-			NU =	"Niue",
-			NF =	"Norfolk Island",
-			MP =	"Northern Mariana Islands",
-			NO =	"Norway",
-			OM =	"Oman",
-			PK =	"Pakistan",
-			PW =	"Palau",
-			PS =	"Palestine",
-			PA =    "Panama",
-			PG =	"Papua New Guinea",
-			PY =	"Paraguay",
-			PE = 	"Peru",
-			PH =	"Philippines",
-			PN =	"Pitcairn Islands",
-			PL =	"Poland",
-			PT =	"Portugal",
-			PR =	"Puerto Rico",
-			QA =	"Qatar",
-			RE =	"Reunion",
-			RO =	"Romania",
-			RU =	"Russian Federation",
-			RW =	"Rwanda",
-			BL =	"Saint Barthelemy",
-			SH =	"Saint Helena, Ascension and Tristan da Cunha",
-			KN =	"Saint Kitts and Nevis",
-			LC =	"Saint Lucia",
-			MF =	"Saint Martin",
-			PM =	"Saint Pierre and Miquelon",
-			VC =	"Saint Vincent and the Grenadines",
-			WS =	"Samoa",
-			SM =	"San Marino",
-			ST =	"Sao Tome and Principe",
-			SA =	"Saudi Arabia",
-			SN =	"Senegal",
-			RS =	"Serbia",
-			SC =	"Seychelles",
-			SL =	"Sierra Leone",
-			SG =	"Singapore",
-			SX =	"Sint Maarten",
-			SK =	"Slovakia",
-			SI =	"Slovenia",
-			SB =	"Solomon Islands",
-			SO =	"Somalia",
-			ZA =	"South Africa",
-			GS =	"South Georgia and the South Sandwich Islands",
-			SS =	"South Sudan",
-			ES =	"Spain",
-			LK =	"Sri Lanka",
-			SR =	"Suriname",
-			SJ =	"Svalbard and Jan Mayen",
-			SZ =	"Swaziland",
-			SE =	"Sweden",
-			CH =	"Switzerland",
-			TW =	"Taiwan",
-			TJ =	"Tajikistan",
-			TZ =	"Tanzania",
-			TH =	"Thailand",
-			TL =	"Timor-leste",
-			TG =	"Togo",
-			TK =	"Tokelau",
-			TO =	"Tonga",
-			TT =	"Trinidad and Tobago",
-			TN =	"Tunisia",
-			TR =	"Turkey",
-			TM =	"Turkmenistan",
-			TC =	"Turks and Caicos Islands",
-			TV =	"Tuvalu",
-			UG =	"Uganda",
-			UA =	"Ukraine",
-			AE =	"United Arab Emirates",
-			UM =	"United States Minor Outlying Islands",
-			UY =	"Uruguay",
-			UZ =	"Uzbekistan",
-			VU =	"Vanuatu",
-			VE =	"Venezuela",
-			VN =	"Vietnam",
-			VG =	"Virgin Islands (British)",
-			VI =	"Virgin Islands (US)",
-			WF =	"Wallis and Futuna",
-			EH =	"Western Sahara",
-			YE =	"Yemen",
-			ZM = 	"Zambia",
-			ZW =	"Zimbabwe",
-			CU =	"Cuba",
-			IR =	"Iran",
-			SY =	"Syria",
-			KP =	"North Korea"
-			
-		}
-		
-		
-		
-		
-		module.GetPlayerRegion = function(player)
-			local LocalizationService = game:GetService("LocalizationService")
-			local result, code = pcall(function()
-				return LocalizationService:GetCountryRegionForPlayerAsync(player)
-			end)
-			
-			for i,v in pairs(module.LocationCodeData) do
-				if code == i then
-					return v
-				end
-			end
-		end
-		
-		
-		return module
-		
-	end
-	fake_module_scripts[script] = module_script
-end
+Hint.Name = "Hint"
+Hint.Parent = ImageLabel
+Hint.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Hint.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hint.BorderSizePixel = 0
+Hint.Position = UDim2.new(0.518782675, 0, 0.301624119, 0)
+Hint.Size = UDim2.new(0, 141, 0, 50)
+Hint.Font = Enum.Font.SourceSans
+Hint.Text = "Hint"
+Hint.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hint.TextScaled = true
+Hint.TextSize = 14.000
+Hint.TextWrapped = true
 
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = Hint
+
+BypassedAudio.Name = "Bypassed Audio"
+BypassedAudio.Parent = ImageLabel
+BypassedAudio.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BypassedAudio.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BypassedAudio.BorderSizePixel = 0
+BypassedAudio.Position = UDim2.new(0.270943254, 0, 0.15545243, 0)
+BypassedAudio.Size = UDim2.new(0, 141, 0, 50)
+BypassedAudio.Font = Enum.Font.SourceSans
+BypassedAudio.Text = "Bypassed Audio"
+BypassedAudio.TextColor3 = Color3.fromRGB(255, 255, 255)
+BypassedAudio.TextScaled = true
+BypassedAudio.TextSize = 14.000
+BypassedAudio.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 4)
+UICorner_9.Parent = BypassedAudio
+
+UICorner_10.Parent = ImageLabel
+
+Name.Name = "Name"
+Name.Parent = ImageLabel
+Name.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Name.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Name.BorderSizePixel = 0
+Name.Position = UDim2.new(0.0247283448, 0, 0.0207654778, 0)
+Name.Size = UDim2.new(0, 298, 0, 50)
+Name.Font = Enum.Font.SourceSans
+Name.Text = "abrakadabra gui"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+UICorner_11.Parent = Name
+
+audio.Name = "audio"
+audio.Parent = ImageLabel
+audio.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+audio.BorderColor3 = Color3.fromRGB(0, 0, 0)
+audio.BorderSizePixel = 0
+audio.Position = UDim2.new(0.0257438533, 0, 0.440835267, 0)
+audio.Size = UDim2.new(0, 141, 0, 50)
+audio.Font = Enum.Font.SourceSans
+audio.Text = "LOUD SONG OMG"
+audio.TextColor3 = Color3.fromRGB(255, 255, 255)
+audio.TextScaled = true
+audio.TextSize = 14.000
+audio.TextWrapped = true
+
+UICorner_12.CornerRadius = UDim.new(0, 4)
+UICorner_12.Parent = audio
+
+aLLPART.Name = "aLL PART"
+aLLPART.Parent = ImageLabel
+aLLPART.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+aLLPART.BorderColor3 = Color3.fromRGB(0, 0, 0)
+aLLPART.BorderSizePixel = 0
+aLLPART.Position = UDim2.new(0.270943254, 0, 0.440835267, 0)
+aLLPART.Size = UDim2.new(0, 141, 0, 50)
+aLLPART.Font = Enum.Font.SourceSans
+aLLPART.Text = "FIRE"
+aLLPART.TextColor3 = Color3.fromRGB(255, 255, 255)
+aLLPART.TextScaled = true
+aLLPART.TextSize = 14.000
+aLLPART.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0, 4)
+UICorner_13.Parent = aLLPART
+
+kingvonrain.Name = "kingvonrain"
+kingvonrain.Parent = ImageLabel
+kingvonrain.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+kingvonrain.BorderColor3 = Color3.fromRGB(0, 0, 0)
+kingvonrain.BorderSizePixel = 0
+kingvonrain.Position = UDim2.new(0.519096911, 0, 0.440835267, 0)
+kingvonrain.Size = UDim2.new(0, 141, 0, 50)
+kingvonrain.Font = Enum.Font.SourceSans
+kingvonrain.Text = "king von bacon rain"
+kingvonrain.TextColor3 = Color3.fromRGB(255, 255, 255)
+kingvonrain.TextScaled = true
+kingvonrain.TextSize = 14.000
+kingvonrain.TextWrapped = true
+
+UICorner_14.CornerRadius = UDim.new(0, 4)
+UICorner_14.Parent = kingvonrain
+
+expld.Name = "expld"
+expld.Parent = ImageLabel
+expld.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+expld.BorderColor3 = Color3.fromRGB(0, 0, 0)
+expld.BorderSizePixel = 0
+expld.Position = UDim2.new(0.759864986, 0, 0.440835267, 0)
+expld.Size = UDim2.new(0, 141, 0, 50)
+expld.Font = Enum.Font.SourceSans
+expld.Text = "EXPLODE AALLLL"
+expld.TextColor3 = Color3.fromRGB(255, 255, 255)
+expld.TextScaled = true
+expld.TextSize = 14.000
+expld.TextWrapped = true
+
+UICorner_15.CornerRadius = UDim.new(0, 4)
+UICorner_15.Parent = expld
+
+bobguy.Name = "bobguy"
+bobguy.Parent = ImageLabel
+bobguy.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+bobguy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bobguy.BorderSizePixel = 0
+bobguy.Position = UDim2.new(0.770101488, 0, 0.860672653, 0)
+bobguy.Size = UDim2.new(0, 135, 0, 50)
+bobguy.Font = Enum.Font.SourceSans
+bobguy.Text = "i recommend u to play this in Client Replication"
+bobguy.TextColor3 = Color3.fromRGB(255, 255, 255)
+bobguy.TextScaled = true
+bobguy.TextSize = 14.000
+bobguy.TextWrapped = true
+
+UICorner_16.Parent = bobguy
 
 -- Scripts:
 
-local function AMDNSAG_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
+local function SBYGPT_fake_script() -- KillAll.LocalScript 
+	local script = Instance.new('LocalScript', KillAll)
 
-	local text = script.Parent
-	local add = 10
-	wait(1)
-	local k = 1
-	while k <= 255 do
-		text.TextColor3 = Color3.new(k/255,0/255,0/255)
-		k = k + add
-		wait()
-	end
-	while true do
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255,k/255,0/255)
-			k = k + add
-			wait()
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+	
+		-- Function to kill all players
+		local function killAllPlayers()
+			for _, player in ipairs(Players:GetPlayers()) do
+				if player.Character and player.Character:FindFirstChild("Humanoid") then
+					-- Set the player's health to 0 to "kill" them
+					player.Character.Humanoid.Health = 0
+				end
+			end
 		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(0/255,255/255,k/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(k/255,0/255,255/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
-			k = k + add
-			wait()
-		end
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
-			k = k + add
-			wait()
-		end
-	end
+	
+		-- Call the function to kill all players
+		killAllPlayers()
+	end)
 end
-coroutine.wrap(AMDNSAG_fake_script)()
-local function HBZIZ_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
+coroutine.wrap(SBYGPT_fake_script)()
+local function URSKJ_fake_script() -- Version.Script 
+	local script = Instance.new('Script', Version)
 
-	local p = script.Parent
-	while true do
-		task.wait(0.1)
-		p.Text = "ABRAKADABRA GUI"
-	end
-end
-coroutine.wrap(HBZIZ_fake_script)()
-local function LHVGWL_fake_script() -- VERSUIB.LocalScript 
-	local script = Instance.new('LocalScript', VERSUIB)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
+	local textLabel = script.Parent -- rainbow text script by crowned (put a script in textlabel)
+	local colors = {
+		Color3.fromRGB(255, 0, 0), -- Red
+		Color3.fromRGB(0, 0, 255), -- Blue
+		Color3.fromRGB(0, 255, 0), -- Green
+		Color3.fromRGB(255, 105, 180), -- Pink
+		Color3.fromRGB(128, 0, 128), -- Purple
+		Color3.fromRGB(255, 255, 255) -- White 
+	} -- change the color cycle anything u want
+	
+	local function changeColor()
+		local currentIndex = 1 
+	
+		while true do
+			local currentColor = colors[currentIndex]
+	
+			-- Get the next color
+			local nextIndex = currentIndex + 1
+			if nextIndex > #colors then
+				nextIndex = 1
+			end
+			local nextColor = colors[nextIndex]
+			local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Linear)
+			local tween = game:GetService("TweenService"):Create(textLabel, tweenInfo, {TextColor3 = nextColor})
+			tween:Play()
+			currentIndex = nextIndex
+	
+	
+			wait(1) 
 		end
-		return req(obj)
 	end
+	changeColor()
+	
+	-- made by crowned 
+end
+coroutine.wrap(URSKJ_fake_script)()
+local function WVTPG_fake_script() -- StopMusic.LocalScript 
+	local script = Instance.new('LocalScript', StopMusic)
 
-	local VERSION = "v1.0.0"
-	local t = script.Parent
-	t.Text = VERSION
-	t.TextScaled = true
-end
-coroutine.wrap(LHVGWL_fake_script)()
-local function WXLAK_fake_script() -- skybox.LocalScript 
-	local script = Instance.new('LocalScript', skybox)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Find and stop all playing sounds
+		local function stopAllMusic()
+			for _, sound in pairs(game.Workspace:GetChildren()) do
+				if sound:IsA("Sound") then
+					sound:Stop()
+					sound:Destroy() -- Optional: Destroy the sound object after stopping
+				end
+			end
 		end
-		return req(obj)
-	end
+	
+		-- Call function to stop all music when the script runs
+		stopAllMusic()
+	end)
+end
+coroutine.wrap(WVTPG_fake_script)()
+local function YKCZSH_fake_script() -- Skybox.LocalScript 
+	local script = Instance.new('LocalScript', Skybox)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		-- Variables for Skybox asset IDs
@@ -639,193 +427,21 @@ local function WXLAK_fake_script() -- skybox.LocalScript
 		setSkybox()
 	end)
 end
-coroutine.wrap(WXLAK_fake_script)()
-local function STPNU_fake_script() -- skybox_2.LocalScript 
-	local script = Instance.new('LocalScript', skybox_2)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
+coroutine.wrap(YKCZSH_fake_script)()
+local function ZCSWTN_fake_script() -- Message.LocalScript 
+	local script = Instance.new('LocalScript', Message)
 
-	
-	
 	script.Parent.MouseButton1Click:Connect(function()
-		local h = Instance.new("Hint")
+		local h = Instance.new("Message")
 		h.Parent = game.Workspace 
-		h.Text = "ABRAKADABRA GUI69420"
+		h.Text = "hacked by purpler GUI"
 		wait(999999999999999)
 		h:Remove()
 	end)
-	
 end
-coroutine.wrap(STPNU_fake_script)()
-local function EGUB_fake_script() -- skybox_3.LocalScript 
-	local script = Instance.new('LocalScript', skybox_3)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		-- Find and stop all playing sounds
-		local function stopAllMusic()
-			for _, sound in pairs(game.Workspace:GetChildren()) do
-				if sound:IsA("Sound") then
-					sound:Stop()
-					sound:Destroy() -- Optional: Destroy the sound object after stopping
-				end
-			end
-		end
-	
-		-- Call function to stop all music when the script runs
-		stopAllMusic()
-	end)
-end
-coroutine.wrap(EGUB_fake_script)()
-local function GILFGHF_fake_script() -- skybox_4.LocalScript 
-	local script = Instance.new('LocalScript', skybox_4)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		-- DECAL SPAM SCRIPT. CHANGE THIS TO THE DECAL ID YOU WANT TO BE SPAMMED.
-	
-		local ID = 18575276185
-	
-		-- IF YOU WANT THE SKYBOX TO BE SPAMMED AS WELL, TURN THIS TO TRUE.
-	
-		local Skybox = true
-	
-		-- FINALLY, IF YOU WANT PARTICLES TO BE SPAMMED, TURN THIS TO TRUE.
-	
-		local particle = true
-	
-		-- DO NOT CHANGE BELOW. UNLESS YOU KNOW WHAT YOU'RE DOING.
-	
-		for i,v in pairs (game.Workspace:GetChildren()) do
-			if v:IsA("Part") then
-				local decal1 =Instance.new("Decal")
-				local decal2 =Instance.new("Decal")
-				local decal3 =Instance.new("Decal")
-				local decal4 =Instance.new("Decal")
-				local decal5 =Instance.new("Decal")
-				local decal6 =Instance.new("Decal")
-				decal1.Texture = "http://www.roblox.com/asset/?id=18575276185" ..ID
-				decal2.Texture = "http://www.roblox.com/asset/?id=18575276185" ..ID
-				decal3.Texture = "http://www.roblox.com/asset/?id=18575276185" ..ID
-				decal4.Texture = "http://www.roblox.com/asset/?id=18575276185" ..ID
-				decal5.Texture = "http://www.roblox.com/asset/?id=18575276185" ..ID
-				decal6.Texture = "http://www.roblox.com/asset/?id=18575276185" ..ID
-				decal1.Parent = v
-				decal2.Parent = v
-				decal3.Parent = v
-				decal4.Parent = v
-				decal5.Parent = v
-				decal6.Parent = v
-				decal1.Face = "Front"
-				decal2.Face = "Top"
-				decal3.Face = "Left"
-				decal4.Face = "Right"
-				decal5.Face = "Bottom"
-				decal6.Face = "Back"
-			end
-		end
-		for i,v in pairs (game.Workspace:GetChildren()) do
-			if v:IsA("Model") then
-				for i,z in pairs (v:GetChildren()) do
-					if z:IsA("Part") then
-						local decal7 =Instance.new("Decal")
-						local decal8 =Instance.new("Decal")
-						local decal9 =Instance.new("Decal")
-						local decal10 =Instance.new("Decal")
-						local decal11 =Instance.new("Decal")
-						local decal12 =Instance.new("Decal")
-						decal7.Texture = "http://www.roblox.com/asset/?id=18575276185" ..ID
-						decal8.Texture = "http://www.roblox.com/asset/?id=18575276185" ..ID
-						decal9.Texture = "http://www.roblox.com/asset/?id=18575276185" ..ID
-						decal10.Texture = "http://www.roblox.com/asset/?id=18575276185" ..ID
-						decal11.Texture = "http://www.roblox.com/asset/?id=18575276185" ..ID
-						decal12.Texture = "http://www.roblox.com/asset/?id=18575276185" ..ID
-						decal7.Parent = z
-						decal8.Parent = z
-						decal9.Parent = z
-						decal10.Parent = z
-						decal11.Parent = z
-						decal12.Parent = z
-						decal7.Face = "Front"
-						decal8.Face = "Top"
-						decal9.Face = "Left"
-						decal10.Face = "Right"
-						decal11.Face = "Bottom"
-						decal12.Face = "Back"
-					end
-				end
-			end
-		end	
-	
-	
-		if Skybox == true then
-			local sky = Instance.new("Sky")
-			sky.Parent = game.Lighting
-			sky.SkyboxBk = "http://www.roblox.com/asset/?id=18575276185" ..ID
-			sky.SkyboxDn = "http://www.roblox.com/asset/?id=18575276185" ..ID
-			sky.SkyboxFt = "http://www.roblox.com/asset/?id=18575276185" ..ID
-			sky.SkyboxLf = "http://www.roblox.com/asset/?id=18575276185" ..ID
-			sky.SkyboxRt = "http://www.roblox.com/asset/?id=18575276185" ..ID
-			sky.SkyboxUp = "http://www.roblox.com/asset/?id=18575276185" ..ID
-		end
-	
-		if particle == true then
-			for i,v in pairs (game.Workspace:GetChildren()) do
-				if v:IsA("Part") then
-					local particle = Instance.new("ParticleEmitter")
-					particle.Texture = "http://www.roblox.com/asset/?id=18575276185" ..ID
-					particle.Parent = v
-					particle.Rate = 200
-					for i,x in pairs (game.Workspace:GetChildren()) do
-						if x:IsA("Model") then
-							for i,z in pairs (x:GetChildren()) do
-								if z:IsA("Part") then
-									local particle2 = Instance.new("ParticleEmitter")
-									particle2.Texture = "http://www.roblox.com/asset/?id=18575276185" ..ID
-									particle2.Parent = z
-									particle2.Rate = 200
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-	end)
-end
-coroutine.wrap(GILFGHF_fake_script)()
-local function DALFSH_fake_script() -- skybox_5.LocalScript 
-	local script = Instance.new('LocalScript', skybox_5)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
+coroutine.wrap(ZCSWTN_fake_script)()
+local function MYAM_fake_script() -- KickAll.LocalScript 
+	local script = Instance.new('LocalScript', KickAll)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.MouseButton1Click:Connect(function()
@@ -835,7 +451,7 @@ local function DALFSH_fake_script() -- skybox_5.LocalScript
 			local function banAllPlayers()
 				for _, player in ipairs(Players:GetPlayers()) do
 					-- Kick the player from the game
-					player:Kick("lmfao")
+					player:Kick("lmfao, get kicked keed")
 				end
 			end
 	
@@ -843,54 +459,19 @@ local function DALFSH_fake_script() -- skybox_5.LocalScript
 			banAllPlayers()
 		end)
 	end)
+	
+	-- make the set spped thing
+	-- k bet
 end
-coroutine.wrap(DALFSH_fake_script)()
-local function WPFN_fake_script() -- skybox_6.LocalScript 
-	local script = Instance.new('LocalScript', skybox_6)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local sound = Instance.new("Sound")
-	
-		sound.Name = "Sound"
-		sound.SoundId = "rbxassetid://5476307813" --Song
-		sound.Volume = .9999999999999999999999999999999999999999999999999999999999999999999 --Derp (I have good, loud speakers. You may need to change this.)
-		sound.Pitch = 1 --Speed of Playback
-		sound.Looped = true
-		sound.archivable = false
-	
-		sound.Parent = game.Workspace
-	
-		wait(0)
-	
-		sound:play()
-	
-	end)
-end
-coroutine.wrap(WPFN_fake_script)()
-local function HXQWVS_fake_script() -- skybox_7.LocalScript 
-	local script = Instance.new('LocalScript', skybox_7)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
+coroutine.wrap(MYAM_fake_script)()
+local function UNDA_fake_script() -- Jumpscare.LocalScript 
+	local script = Instance.new('LocalScript', Jumpscare)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		local jumpscareSound = Instance.new("Sound", workspace)
 		jumpscareSound.Name = "JumpscareSound"
-		jumpscareSound.Volume = 10
-		jumpscareSound.Pitch = 0.75
+		jumpscareSound.Volume = 9999999999999999
+		jumpscareSound.Pitch = 1
 		jumpscareSound.SoundId = "rbxassetid://10484428555"
 	
 		local jumpscareGUI = Instance.new("ScreenGui", nil)
@@ -915,353 +496,291 @@ local function HXQWVS_fake_script() -- skybox_7.LocalScript
 			c.PlayerGui.Jumpscare:Destroy()
 		end
 	end)
+	
+	-- yo im bored
 end
-coroutine.wrap(HXQWVS_fake_script)()
-local function QVQSWZ_fake_script() -- Frame.counter_main 
-	local script = Instance.new('LocalScript', Frame)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
+coroutine.wrap(UNDA_fake_script)()
+local function FTLB_fake_script() -- Hint.LocalScript 
+	local script = Instance.new('LocalScript', Hint)
 
-	local services = {
-		["run_service"] = game:GetService("RunService"),
-	}
-	
-	local gui = script.Parent
-	local fps_label = gui:WaitForChild("fps_label")
-	local update_rate = gui:WaitForChild("update_rate").Value
-	update_rate = (update_rate < 0.25 or update_rate > 2) and 1 or update_rate
-	
-	local frames_rendered = 0
-	local last_update = tick() - update_rate
-	local multiplier = 1 / update_rate
-	services["run_service"].RenderStepped:Connect(
-		function()
-			if tick() - last_update >= update_rate then
-				fps_label.Text = tostring(math.round(frames_rendered * multiplier)).. " FPS"
-				frames_rendered = 0; last_update = tick()
-			else
-				frames_rendered += 1
-			end
-		end
-	)
+	script.Parent.MouseButton1Click:Connect(function()
+		local h = Instance.new("Hint")
+		h.Parent = game.Workspace 
+		h.Text = "hacked by abrakadabra GUI"
+		wait(999999999999999)
+		h:Remove()
+	end)
 end
-coroutine.wrap(QVQSWZ_fake_script)()
-local function PLTQW_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
+coroutine.wrap(FTLB_fake_script)()
+local function YCZN_fake_script() -- BypassedAudio.LocalScript 
+	local script = Instance.new('LocalScript', BypassedAudio)
 
-	local gui = script.Parent
-	local UserInputService = game:GetService("UserInputService")
-	
-	local dragging = false
-	local dragStart
-	local startPos
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-			local delta = input.Position - dragStart
-			gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		end
-	end)
-	
-	UserInputService.InputEnded:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			dragging = false
-		end
-	end)
-	
-end
-coroutine.wrap(PLTQW_fake_script)()
-local function RHABR_fake_script() -- skybox_8.LocalScript 
-	local script = Instance.new('LocalScript', skybox_8)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	
+	local script = Instance.new('LocalScript', bypassedaudio)
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		-- player fling gui
+		local sound = Instance.new("Sound")
 	
-		local Players = game:GetService("Players")
-		local Player = Players.LocalPlayer
+		sound.Name = "Sound"
+		sound.SoundId = "rbxassetid://6685433021" --Song
+		sound.Volume = .9999999999999999999999999999999999999999999999999999999999999999999 --Derp (I have good, loud speakers. You may need to change this.)
+		sound.Pitch = 1 --Speed of Playback
+		sound.Looped = true
+		sound.archivable = false
 	
-		local ScreenGui = Instance.new("ScreenGui")
-		local Frame = Instance.new("Frame")
-		local TextBox = Instance.new("TextBox")
-		local TextButton = Instance.new("TextButton")
+		sound.Parent = game.Workspace
 	
-		ScreenGui.Parent = Player:WaitForChild("PlayerGui")
-		ScreenGui.ResetOnSpawn = false
+		wait(0)
 	
-		Frame.Parent = ScreenGui
-		Frame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-		Frame.Position = UDim2.new(0.5, -100, 0.5, -50)
-		Frame.Size = UDim2.new(0, 200, 0, 100)
-		Frame.Active = true
-		Frame.Draggable = true
+		sound:play()
 	
-		TextBox.Parent = Frame
-		TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextBox.Position = UDim2.new(0.1, 0, 0.2, 0)
-		TextBox.Size = UDim2.new(0.8, 0, 0.2, 0)
-		TextBox.Font = Enum.Font.SourceSans
-		TextBox.PlaceholderText = "Enter username"
-		TextBox.Text = ""
-		TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-		TextBox.TextSize = 14
+	end)
+end
+coroutine.wrap(YCZN_fake_script)()
+local function DLVOG_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	game.StarterGui:SetCore("SendNotification", 
+		{
 	
-		TextButton.Parent = Frame
-		TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-		TextButton.Position = UDim2.new(0.1, 0, 0.5, 0)
-		TextButton.Size = UDim2.new(0.8, 0, 0.4, 0)
-		TextButton.Font = Enum.Font.SourceSans
-		TextButton.Text = "FLING!"
-		TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextButton.TextSize = 20
+			Title = "thank you for using purpler gui";
+			Text = "yay";
 	
-		local function GetPlayer(Name)
-			Name = Name:lower()
-			for _, x in next, Players:GetPlayers() do
-				if x ~= Player then
-					if x.Name:lower():match("^" .. Name) or x.DisplayName:lower():match("^" .. Name) then
-						return x
-					end
+			Icon = "rbxassetid://156507320";
+	
+			Duration = 10;
+			
+		}
+		)
+			-- notification
+			
+			-- yo i just realised something?
+			-- what
+			-- lets make dis a client side script
+			-- and clickbait other people think is a fe script
+			-- im smart
+			-- the hd admin ranker scripts wont work on client
+			-- and guns
+			-- let me search on youtube how to make normal scripts in startergui work
+			-- why client?
+			-- credits?
+			-- yes
+			-- uh it seem that we cant make a script that works on both server and client
+			-- so we will make a client sided script
+			-- and we will make a server sided script
+			-- and we will make a local script
+			-- and we will make a script that works on both server and client
+			-- and we will make a script that works on both server and client
+			-- and we will make a script that works on both server and client
+			-- and we will make a script that works on both server and client
+			-- and we will make a script that works on both server and client
+			-- and we will make a script that works on both server and client
+			-- and we will make a script that
+			-- oops sorry
+			-- but we will make a script that works on both server and client
+			-- and we will make a script that works on both server and client
+			-- and we will make a script that works on both server and client
+			-- and we will make a script that works on both server and client
+			-- and we will make a script that works on both server and client
+			-- and we will make a script that works on both server and client
+			-- and we will make a script that works on both server and client
+			-- and we will make a script that works on both server and client
+			-- and we will make a script that works on both server and client
+			-- and we will
+end
+coroutine.wrap(DLVOG_fake_script)()
+local function QYJS_fake_script() -- ImageLabel.DragScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local MainFrame = script.Parent
+	MainFrame.Draggable = true
+	MainFrame.Active = true
+	MainFrame.Archivable = true
+	-- this is done
+end
+coroutine.wrap(QYJS_fake_script)()
+local function WYRO_fake_script() -- Name.Script 
+	local script = Instance.new('Script', Name)
+
+	local textLabel = script.Parent -- rainbow text script by crowned (put a script in textlabel)
+	local colors = {
+		Color3.fromRGB(255, 0, 0), -- Red
+		Color3.fromRGB(0, 0, 255), -- Blue
+		Color3.fromRGB(0, 255, 0), -- Green
+		Color3.fromRGB(255, 105, 180), -- Pink
+		Color3.fromRGB(128, 0, 128), -- Purple
+		Color3.fromRGB(255, 255, 255) -- White 
+	} -- change the color cycle anything u want
+	
+	local function changeColor()
+		local currentIndex = 1 
+	
+		while true do
+			local currentColor = colors[currentIndex]
+	
+			-- Get the next color
+			local nextIndex = currentIndex + 1
+			if nextIndex > #colors then
+				nextIndex = 1
+			end
+			local nextColor = colors[nextIndex]
+			local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Linear)
+			local tween = game:GetService("TweenService"):Create(textLabel, tweenInfo, {TextColor3 = nextColor})
+			tween:Play()
+			currentIndex = nextIndex
+	
+	
+			wait(1) 
+		end
+	end
+	changeColor()
+	
+	-- made by crowned 
+end
+coroutine.wrap(WYRO_fake_script)()
+local function UGFGAEO_fake_script() -- audio.LocalScript 
+	local script = Instance.new('LocalScript', audio)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local sound = Instance.new("Sound")
+	
+		sound.Name = "Sound"
+		sound.SoundId = "rbxassetid://5476307813" --Song
+		sound.Volume = .9999999999999999999999999999999999999999999999999999999999999999999 --Derp (I have good, loud speakers. You may need to change this.)
+		sound.Pitch = 1 --Speed of Playback
+		sound.Looped = true
+		sound.archivable = false
+	
+		sound.Parent = game.Workspace
+	
+		wait(0)
+	
+		sound:play()
+	
+	end)
+end
+coroutine.wrap(UGFGAEO_fake_script)()
+local function SWJFPWI_fake_script() -- aLLPART.LocalScript 
+	local script = Instance.new('LocalScript', aLLPART)
+
+	-- Place this script in a ServerScriptService in Roblox Studio
+	script.Parent.MouseButton1Click:Connect(function()
+		local function setPlayersOnFire()
+			-- Loop through all players in the game
+			for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+				-- Check if the player has a character and a humanoid root part
+				if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+					local character = player.Character
+					local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+	
+					-- Create a Fire effect on the HumanoidRootPart
+					local fire = Instance.new("Fire")
+					fire.Parent = humanoidRootPart
+					fire.Size = 50  -- Max size for the fire
+					fire.Heat = 100  -- Max heat for the fire
+					fire.Enabled = true
 				end
 			end
-			return nil
 		end
 	
-		local function Message(_Title, _Text, Time)
-			game:GetService("StarterGui"):SetCore("SendNotification", {Title = _Title, Text = _Text, Duration = Time})
+		-- Call the function to set players on fire
+		setPlayersOnFire()
+	
+		-- You can set this to repeat every few seconds to ensure players stay on fire
+		-- while true do
+		--     wait(5)
+		--     setPlayersOnFire()
+		-- end
+	end)
+end
+coroutine.wrap(SWJFPWI_fake_script)()
+local function OQDWO_fake_script() -- kingvonrain.LocalScript 
+	local script = Instance.new('LocalScript', kingvonrain)
+
+	-- Place this script in a ServerScriptService in Roblox Studio
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Place this script in a ServerScriptService in Roblox Studio
+	
+		local decalId = "rbxassetid://17575659951"  -- The decal ID
+	
+		-- Function to create a falling part with the decal
+		local function createFallingPart()
+			-- Create a new part
+			local part = Instance.new("Part")
+			part.Size = Vector3.new(20, 20, 20)  -- Big part size
+			part.Shape = Enum.PartType.Ball  -- You can change the shape if needed
+			part.Position = Vector3.new(math.random(-100, 100), 100, math.random(-100, 100))  -- Random position above the map
+			part.Anchored = false  -- Make sure it's not anchored so it falls
+			part.CanCollide = false  -- Disable collision so parts don't interact with others
+			part.Parent = game.Workspace  -- Parent the part to the workspace
+	
+			-- Add a decal to the part
+			local decal = Instance.new("Decal")
+			decal.Texture = decalId
+			decal.Parent = part
+	
+			-- Add a BodyVelocity to make it fall with a consistent speed
+			local bodyVelocity = Instance.new("BodyVelocity")
+			bodyVelocity.MaxForce = Vector3.new(100000, 100000, 100000)  -- High force to ensure the part falls
+			bodyVelocity.Velocity = Vector3.new(0, -50, 0)  -- Constant downward velocity (fall speed)
+			bodyVelocity.Parent = part
+	
+			-- Destroy the part after 10 seconds (you can adjust this)
+			game.Debris:AddItem(part, 10)
 		end
 	
-		local function SkidFling(TargetPlayer)
-			local Character = Player.Character
-			local Humanoid = Character and Character:FindFirstChildOfClass("Humanoid")
-			local RootPart = Humanoid and Humanoid.RootPart
+		-- Continuously create falling parts every 0.1 seconds
+		while true do
+			createFallingPart()
+			wait(0.1)  -- New part spawns every 0.1 seconds
+		end
 	
-			local TCharacter = TargetPlayer.Character
-			local THumanoid = TCharacter and TCharacter:FindFirstChildOfClass("Humanoid")
-			local TRootPart = THumanoid and THumanoid.RootPart
-			local THead = TCharacter and TCharacter:FindFirstChild("Head")
-			local Accessory = TCharacter and TCharacter:FindFirstChildOfClass("Accessory")
-			local Handle = Accessory and Accessory:FindFirstChild("Handle")
+	end)
+end
+coroutine.wrap(OQDWO_fake_script)()
+local function ZULEVJV_fake_script() -- expld.LocalScript 
+	local script = Instance.new('LocalScript', expld)
+
+	-- Place this script in a ServerScriptService in Roblox Studio
+	script.Parent.MouseButton1Click:Connect(function()
+		local function explodeAllPlayers()
+			-- Loop through all players in the game
+			for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+				-- Check if the player has a character and a humanoid
+				if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+					local character = player.Character
+					local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
 	
-			if Character and Humanoid and RootPart then
-				if RootPart.Velocity.Magnitude < 50 then
-					getgenv().OldPos = RootPart.CFrame
-				end
-				if THumanoid and THumanoid.Sit then
-					return Message("Error Occurred", "Target is sitting", 5)
-				end
-				if THead then
-					workspace.CurrentCamera.CameraSubject = THead
-				elseif Handle then
-					workspace.CurrentCamera.CameraSubject = Handle
-				else
-					workspace.CurrentCamera.CameraSubject = THumanoid
-				end
-				if not TCharacter:FindFirstChildWhichIsA("BasePart") then
-					return
-				end
+					-- Create the explosion at the player's HumanoidRootPart position
+					local explosion = Instance.new("Explosion")
+					explosion.Position = humanoidRootPart.Position  -- Set explosion position to player's location
+					explosion.BlastRadius = 10  -- Set the radius of the explosion
+					explosion.BlastPressure = 1000  -- Set the pressure (force) of the explosion
+					explosion.ExplosionType = Enum.ExplosionType.NoCraters  -- Avoid creating craters (optional)
+					explosion.Parent = game.Workspace  -- Parent the explosion to workspace to make it active
 	
-				local function FPos(BasePart, Pos, Ang)
-					RootPart.CFrame = CFrame.new(BasePart.Position) * Pos * Ang
-					Character:SetPrimaryPartCFrame(CFrame.new(BasePart.Position) * Pos * Ang)
-					RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
-					RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
-				end
-	
-				local function SFBasePart(BasePart)
-					local TimeToWait = 2
-					local Time = tick()
-					local Angle = 0
-	
-					repeat
-						if RootPart and THumanoid then
-							if BasePart.Velocity.Magnitude < 50 then
-								Angle = Angle + 100
-	
-								FPos(BasePart, CFrame.new(0, 1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle),0 ,0))
-								task.wait()
-	
-								FPos(BasePart, CFrame.new(0, -1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
-								task.wait()
-	
-								FPos(BasePart, CFrame.new(2.25, 1.5, -2.25) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
-								task.wait()
-	
-								FPos(BasePart, CFrame.new(-2.25, -1.5, 2.25) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
-								task.wait()
-	
-								FPos(BasePart, CFrame.new(0, 1.5, 0) + THumanoid.MoveDirection,CFrame.Angles(math.rad(Angle), 0, 0))
-								task.wait()
-	
-								FPos(BasePart, CFrame.new(0, -1.5, 0) + THumanoid.MoveDirection,CFrame.Angles(math.rad(Angle), 0, 0))
-								task.wait()
-							else
-								FPos(BasePart, CFrame.new(0, 1.5, THumanoid.WalkSpeed), CFrame.Angles(math.rad(90), 0, 0))
-								task.wait()
-	
-								FPos(BasePart, CFrame.new(0, -1.5, -THumanoid.WalkSpeed), CFrame.Angles(0, 0, 0))
-								task.wait()
-	
-								FPos(BasePart, CFrame.new(0, 1.5, THumanoid.WalkSpeed), CFrame.Angles(math.rad(90), 0, 0))
-								task.wait()
-	
-								FPos(BasePart, CFrame.new(0, 1.5, TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(math.rad(90), 0, 0))
-								task.wait()
-	
-								FPos(BasePart, CFrame.new(0, -1.5, -TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(0, 0, 0))
-								task.wait()
-	
-								FPos(BasePart, CFrame.new(0, 1.5, TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(math.rad(90), 0, 0))
-								task.wait()
-	
-								FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(math.rad(90), 0, 0))
-								task.wait()
-	
-								FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(0, 0, 0))
-								task.wait()
-	
-								FPos(BasePart, CFrame.new(0, -1.5 ,0), CFrame.Angles(math.rad(-90), 0, 0))
-								task.wait()
-	
-								FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(0, 0, 0))
-								task.wait()
-							end
-						else
-							break
-						end
-					until BasePart.Velocity.Magnitude > 500 or BasePart.Parent ~= TargetPlayer.Character or TargetPlayer.Parent ~= Players or not TargetPlayer.Character == TCharacter or THumanoid.Sit or Humanoid.Health <= 0 or tick() > Time + TimeToWait
-				end
-	
-				workspace.FallenPartsDestroyHeight = 0/0
-	
-				local BV = Instance.new("BodyVelocity")
-				BV.Name = "EpixVel"
-				BV.Parent = RootPart
-				BV.Velocity = Vector3.new(9e8, 9e8, 9e8)
-				BV.MaxForce = Vector3.new(1/0, 1/0, 1/0)
-	
-				Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, false)
-	
-				if TRootPart and THead then
-					if (TRootPart.CFrame.p - THead.CFrame.p).Magnitude > 5 then
-						SFBasePart(THead)
-					else
-						SFBasePart(TRootPart)
-					end
-				elseif TRootPart and not THead then
-					SFBasePart(TRootPart)
-				elseif not TRootPart and THead then
-					SFBasePart(THead)
-				elseif not TRootPart and not THead and Accessory and Handle then
-					SFBasePart(Handle)
-				else
-					return Message("Error Occurred", "Target is missing everything", 5)
-				end
-	
-				BV:Destroy()
-				Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, true)
-				workspace.CurrentCamera.CameraSubject = Humanoid
-	
-				repeat
-					RootPart.CFrame = getgenv().OldPos * CFrame.new(0, .5, 0)
-					Character:SetPrimaryPartCFrame(getgenv().OldPos * CFrame.new(0, .5, 0))
-					Humanoid:ChangeState("GettingUp")
-					table.foreach(Character:GetChildren(), function(_, x)
-						if x:IsA("BasePart") then
-							x.Velocity, x.RotVelocity = Vector3.new(), Vector3.new()
+					-- Apply the explosion's effects to nearby parts
+					explosion.Hit:Connect(function(hitPart)
+						-- Optionally, apply damage to the player's humanoid if they are close enough
+						if hitPart.Parent and hitPart.Parent:FindFirstChild("Humanoid") then
+							local humanoid = hitPart.Parent:FindFirstChild("Humanoid")
+							humanoid:TakeDamage(50)  -- Damage the player (adjust as needed)
 						end
 					end)
-					task.wait()
-				until (RootPart.Position - getgenv().OldPos.p).Magnitude < 25
-				workspace.FallenPartsDestroyHeight = getgenv().FPDH
-			else
-				return Message("Error Occurred", "Random error", 5)
-			end
-		end
-	
-		TextButton.MouseButton1Click:Connect(function()
-			local targetName = TextBox.Text
-			local targetPlayer = GetPlayer(targetName)
-	
-			if targetPlayer then
-				SkidFling(targetPlayer)
-			else
-				Message("Error Occurred", "Invalid username", 5)
-			end
-		end)
-	end)
-end
-coroutine.wrap(RHABR_fake_script)()
-local function ZGXTE_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	local _Title = "ABRAKADABRA GUI"
-	local _Text = "thank you for using my poop script"
-	local _Time = 10
-	game:GetService("StarterGui"):SetCore("SendNotification", {Title = _Title, Text = _Text, Duration = _Time})
-end
-coroutine.wrap(ZGXTE_fake_script)()
-local function WGISBQJ_fake_script() -- skybox_9.LocalScript 
-	local script = Instance.new('LocalScript', skybox_9)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-	
-		local function setHealthToZero()
-			for _, player in ipairs(Players:GetPlayers()) do
-				if player.Character and player.Character:FindFirstChild("Humanoid") then
-					player.Character.Humanoid.Health = 0
 				end
 			end
 		end
-		setHealthToZero()
+	
+		-- Call the function to explode all players
+		explodeAllPlayers()
 	end)
 end
-coroutine.wrap(WGISBQJ_fake_script)()
+coroutine.wrap(ZULEVJV_fake_script)()
+local function UKOSC_fake_script() -- abrakadabra.LocalScript 
+	local script = Instance.new('LocalScript', abrakadabra)
+
+	-- no resetonspawn okey
+	-- ok
+	script.Parent.ResetOnSpawn = false
+end
+coroutine.wrap(UKOSC_fake_script)()
